@@ -1,536 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grand Mercure Surya Palace - Luxury Hotel in Ahmedabad</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Top Bar -->
     <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="top-bar-left">
-                <a href="tel:+919874919900" class="phone-link">
-                    <i class="fas fa-phone"></i>
-                    +91 9874919900
-                </a>
-            </div>
-            <div class="top-bar-right">
-                <div class="language-selector">
-                    <i class="fas fa-globe"></i>
-                    <select aria-label="Select language">
-                        <option value="en">English</option>
-                        <option value="hi">Hindi</option>
-                        <option value="gu">Gujarati</option>
-                    </select>
-                </div>
-                <button class="btn btn-outline btn-sm">Join</button>
-                <button class="btn btn-outline btn-sm">Sign In</button>
-            </div>
+      <div class="container top-bar-inner">
+        <div class="top-bar-left">
+          <a href="tel:+919874919900" class="phone-link">
+            <i class="fas fa-phone"></i>
+            +91 9874919900
+          </a>
         </div>
+        <div class="top-bar-right">
+          <div class="language-selector">
+            <i class="fas fa-globe"></i>
+            <select aria-label="Select language">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+              <option value="gu">Gujarati</option>
+            </select>
+          </div>
+          <button class="btn btn-outline btn-sm">Join</button>
+          <button class="btn btn-outline btn-sm">Sign In</button>
+        </div>
+      </div>
     </div>
 
     <!-- Main Header & Navigation -->
     <header class="main-header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <span class="logo-icon"><i class="fas fa-hotel"></i></span>
-                <span class="logo-text">
-                    <span class="logo-brand">Grand Mercure</span>
-                    <span class="logo-name">Surya Palace</span>
-                </span>
-            </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="#amenities" class="nav-link">Amenities</a>
-                <a href="#dining" class="nav-link">Dining</a>
-                <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#membership" class="nav-link">Membership</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#booking" class="btn btn-reservation">
-                    <i class="fas fa-calendar-check"></i>
-                    Reservation
-                </a>
-            </nav>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
-        </div>
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"><i class="fas fa-hotel"></i></span>
+          <span class="logo-text">
+            <span class="logo-brand">Grand Mercure</span>
+            <span class="logo-name">Surya Palace</span>
+          </span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="amenities.html" class="nav-link">Amenities</a>
+          <a href="accommodation.html" class="nav-link">Rooms</a>
+          <a href="services.html" class="nav-link">About Us</a>
+          <a href="dining.html" class="nav-link">Dining</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="#booking" class="btn btn-reservation">
+            <i class="fas fa-calendar-check"></i>
+            Reservation
+          </a>
+        </nav>
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Welcome To Grand Mercure Surya Palace</h1>
-            <p class="hero-subtitle">Experience Luxury & Comfort in the Heart of Ahmedabad</p>
-        </div>
-        
-        <!-- Booking Form -->
-        <div class="booking-form-wrapper" id="booking">
-            <form class="booking-form" id="heroBookingForm">
-                <div class="booking-field">
-                    <label for="location">
-                        <i class="fas fa-location-dot"></i>
-                        Location
-                    </label>
-                    <select id="location">
-                        <option value="ahmedabad">Hotel Surya Palace - Ahmedabad</option>
-                        <option value="mumbai">Hotel Surya Palace - Mumbai</option>
-                        <option value="delhi">Hotel Surya Palace - Delhi</option>
-                    </select>
-                </div>
-                <div class="booking-field">
-                    <label for="checkin">
-                        <i class="fas fa-calendar"></i>
-                        Check In - Check Out
-                    </label>
-                    <div class="date-range">
-                        <input type="date" id="checkin" required>
-                        <span class="date-separator">to</span>
-                        <input type="date" id="checkout" required>
-                    </div>
-                </div>
-                <div class="booking-field">
-                    <label for="rooms">
-                        <i class="fas fa-door-open"></i>
-                        Rooms
-                    </label>
-                    <select id="rooms">
-                        <option value="1">1 Room</option>
-                        <option value="2">2 Rooms</option>
-                        <option value="3">3 Rooms</option>
-                        <option value="4">4+ Rooms</option>
-                    </select>
-                </div>
-                <div class="booking-field">
-                    <label for="guests">
-                        <i class="fas fa-users"></i>
-                        Guests
-                    </label>
-                    <select id="guests">
-                        <option value="1-0">1 Adult, 0 Child</option>
-                        <option value="2-0">2 Adults, 0 Child</option>
-                        <option value="2-1">2 Adults, 1 Child</option>
-                        <option value="2-2">2 Adults, 2 Children</option>
-                    </select>
-                </div>
-                <div class="booking-field booking-submit">
-                    <button type="submit" class="btn btn-primary btn-lg">
-                        <i class="fas fa-search"></i>
-                        Book Now
-                    </button>
-                </div>
-            </form>
-        </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome To Grand Mercure Surya Palace</h1>
+        <p class="hero-subtitle">
+          Experience Luxury & Comfort in the Heart of Ahmedabad
+        </p>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="booking-form-wrapper" id="booking">
+        <form class="booking-form" id="heroBookingForm">
+          <div class="booking-field">
+            <label for="location">
+              <i class="fas fa-location-dot"></i>
+              Location
+            </label>
+            <select id="location">
+              <option value="ahmedabad">Hotel Surya Palace - Ahmedabad</option>
+              <option value="mumbai">Hotel Surya Palace - Mumbai</option>
+              <option value="delhi">Hotel Surya Palace - Delhi</option>
+            </select>
+          </div>
+          <div class="booking-field">
+            <label for="checkin">
+              <i class="fas fa-calendar"></i>
+              Check In - Check Out
+            </label>
+            <div class="date-range">
+              <input type="date" id="checkin" required />
+              <span class="date-separator">to</span>
+              <input type="date" id="checkout" required />
+            </div>
+          </div>
+          <div class="booking-field">
+            <label for="rooms">
+              <i class="fas fa-door-open"></i>
+              Rooms
+            </label>
+            <select id="rooms">
+              <option value="1">1 Room</option>
+              <option value="2">2 Rooms</option>
+              <option value="3">3 Rooms</option>
+              <option value="4">4+ Rooms</option>
+            </select>
+          </div>
+          <div class="booking-field">
+            <label for="guests">
+              <i class="fas fa-users"></i>
+              Guests
+            </label>
+            <select id="guests">
+              <option value="1-0">1 Adult, 0 Child</option>
+              <option value="2-0">2 Adults, 0 Child</option>
+              <option value="2-1">2 Adults, 1 Child</option>
+              <option value="2-2">2 Adults, 2 Children</option>
+            </select>
+          </div>
+          <div class="booking-field booking-submit">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="fas fa-search"></i>
+              Book Now
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
 
-    <!-- Our Amenities Section -->
-    <section class="section amenities-section" id="amenities">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Amenities</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="amenities-grid">
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-person-swimming"></i>
-                    </div>
-                    <span class="amenity-label">Swimming Pool</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <span class="amenity-label">WiFi</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <span class="amenity-label">Breakfast</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <span class="amenity-label">Gym</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <span class="amenity-label">Game Center</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <span class="amenity-label">24/7 Light</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-shirt"></i>
-                    </div>
-                    <span class="amenity-label">Laundry</span>
-                </div>
-                <div class="amenity-card">
-                    <div class="amenity-icon">
-                        <i class="fas fa-square-parking"></i>
-                    </div>
-                    <span class="amenity-label">Parking Space</span>
-                </div>
-            </div>
-            <div class="section-cta">
-                <button class="btn btn-primary">View All Amenities</button>
-            </div>
+    <!-- Quick Links -->
+    <section class="section quick-links-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore Our Hotel</h2>
+          <div class="title-underline"></div>
         </div>
-    </section>
-
-    <!-- Luxury Accommodation Section -->
-    <section class="section accommodation-section" id="accommodation">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Luxury Accommodation</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="accommodation-grid">
-                <article class="room-card">
-                    <div class="room-image">
-                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Deluxe Suite" loading="lazy">
-                        <span class="room-badge">Popular</span>
-                    </div>
-                    <div class="room-content">
-                        <h3 class="room-title">Deluxe Suite</h3>
-                        <p class="room-description">Spacious suite with city views, king-size bed, and premium amenities for a comfortable stay.</p>
-                        <div class="room-footer">
-                            <span class="room-price">₹8,999<span class="price-suffix">/night</span></span>
-                            <button class="btn btn-primary btn-sm">Book Now</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="room-card">
-                    <div class="room-image">
-                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Executive Room" loading="lazy">
-                    </div>
-                    <div class="room-content">
-                        <h3 class="room-title">Executive Room</h3>
-                        <p class="room-description">Elegant room with modern facilities, perfect for business travelers and couples.</p>
-                        <div class="room-footer">
-                            <span class="room-price">₹6,499<span class="price-suffix">/night</span></span>
-                            <button class="btn btn-primary btn-sm">Book Now</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="room-card">
-                    <div class="room-image">
-                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80" alt="Premium Room" loading="lazy">
-                        <span class="room-badge">New</span>
-                    </div>
-                    <div class="room-content">
-                        <h3 class="room-title">Premium Room</h3>
-                        <p class="room-description">Cozy room with all essential amenities for a relaxing and memorable experience.</p>
-                        <div class="room-footer">
-                            <span class="room-price">₹4,999<span class="price-suffix">/night</span></span>
-                            <button class="btn btn-primary btn-sm">Book Now</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
+        <div class="quick-links-grid">
+          <a href="amenities.html" class="quick-link-card">
+            <i class="fas fa-concierge-bell"></i>
+            <h3>Amenities</h3>
+            <p>Discover our world-class facilities</p>
+          </a>
+          <a href="accommodation.html" class="quick-link-card">
+            <i class="fas fa-bed"></i>
+            <h3>Rooms & Suites</h3>
+            <p>Luxurious accommodations await</p>
+          </a>
+          <a href="dining.html" class="quick-link-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Dining</h3>
+            <p>Savor exquisite cuisines</p>
+          </a>
+          <a href="gallery.html" class="quick-link-card">
+            <i class="fas fa-images"></i>
+            <h3>Gallery</h3>
+            <p>View our stunning visuals</p>
+          </a>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials-section">
-        <div class="container">
-            <div class="testimonial-card">
-                <div class="testimonial-profile">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Ajit Prabhu" loading="lazy">
-                </div>
-                <div class="testimonial-content">
-                    <h3 class="testimonial-title">Our Guest Says</h3>
-                    <blockquote class="testimonial-quote">
-                        "His heartfelt thanks to Surya Palace for making our stay truly memorable. The hospitality, 
-                        the amenities, and the beautiful surroundings made our experience exceptional. 
-                        We highly recommend this hotel to everyone!"
-                    </blockquote>
-                    <div class="testimonial-author">Ajit Prabhu</div>
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section services-section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Services to Guests</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                    <div class="service-number">720+</div>
-                    <div class="service-label">Bedrooms</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="service-number">150+</div>
-                    <div class="service-label">Convenient Locations</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-door-closed"></i>
-                    </div>
-                    <div class="service-number">8</div>
-                    <div class="service-label">Room Types</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-rings-wedding"></i>
-                    </div>
-                    <div class="service-number">720+</div>
-                    <div class="service-label">Wedding Events</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users-rectangle"></i>
-                    </div>
-                    <div class="service-number">1500+</div>
-                    <div class="service-label">Conferences</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Fine Dine Section -->
-    <section class="section dining-section" id="dining">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Fine Dine</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="dining-grid">
-                <article class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Adabi Pavilion" loading="lazy">
-                    </div>
-                    <div class="restaurant-content">
-                        <h3 class="restaurant-name">Adabi Pavilion</h3>
-                        <p class="restaurant-cuisine">Indian Cuisine</p>
-                        <p class="restaurant-description">Authentic Indian flavors with a modern twist, serving traditional recipes passed down generations.</p>
-                        <button class="btn btn-primary btn-sm">View Menu</button>
-                    </div>
-                </article>
-                <article class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80" alt="Dophani" loading="lazy">
-                    </div>
-                    <div class="restaurant-content">
-                        <h3 class="restaurant-name">Dophani</h3>
-                        <p class="restaurant-cuisine">Multi-Cuisine Restaurant</p>
-                        <p class="restaurant-description">Global flavors under one roof, featuring live cooking stations and themed dinner nights.</p>
-                        <button class="btn btn-primary btn-sm">View Menu</button>
-                    </div>
-                </article>
-                <article class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Yi-ling" loading="lazy">
-                    </div>
-                    <div class="restaurant-content">
-                        <h3 class="restaurant-name">Yi-ling</h3>
-                        <p class="restaurant-cuisine">Asian Fusion</p>
-                        <p class="restaurant-description">Savor the finest Pan-Asian delicacies from China, Thailand, Japan, and more.</p>
-                        <button class="btn btn-primary btn-sm">View Menu</button>
-                    </div>
-                </article>
-                <article class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Royal Yoga" loading="lazy">
-                    </div>
-                    <div class="restaurant-content">
-                        <h3 class="restaurant-name">Royal Yoga</h3>
-                        <p class="restaurant-cuisine">Wellness & Dining</p>
-                        <p class="restaurant-description">Healthy cuisine and yoga sessions for a balanced body and mind experience.</p>
-                        <button class="btn btn-primary btn-sm">Learn More</button>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="section gallery-section" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Gallery</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&q=80" alt="Hotel Exterior" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1615460549969-36fa19521a4f?w=400&q=80" alt="Luxury Pool" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80" alt="Hotel Lobby" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&q=80" alt="Restaurant" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&q=80" alt="Premium Suite" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&q=80" alt="Gym Area" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80" alt="Garden View" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=400&q=80" alt="Conference Room" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact-section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-location-dot"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Address</h4>
-                            <p>Grand Mercure Surya Palace<br>CG Road, Navrangpura<br>Ahmedabad, Gujarat 380009</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+91 9874919900</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>info@suryaPalace.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-name">Your Name</label>
-                                <input type="text" id="contact-name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">Email Address</label>
-                                <input type="email" id="contact-email" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-subject">Subject</label>
-                            <input type="text" id="contact-subject" placeholder="How can we help?" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-message">Message</label>
-                            <textarea id="contact-message" rows="5" placeholder="Write your message here..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <i class="fas fa-hotel"></i>
-                        <span>Surya Palace</span>
-                    </div>
-                    <p class="footer-desc">Experience luxury and comfort at Grand Mercure Surya Palace. Your perfect destination for business and leisure.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#amenities">Amenities</a></li>
-                        <li><a href="#accommodation">Rooms</a></li>
-                        <li><a href="#dining">Dining</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Spa & Wellness</a></li>
-                        <li><a href="#">Conference Rooms</a></li>
-                        <li><a href="#">Wedding Planning</a></li>
-                        <li><a href="#">Airport Transfer</a></li>
-                        <li><a href="#">Tour Packages</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for exclusive offers and updates</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <i class="fas fa-hotel"></i>
+              <span>Surya Palace</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Grand Mercure Surya Palace. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+            <p class="footer-desc">
+              Experience luxury and comfort at Grand Mercure Surya Palace. Your
+              perfect destination for business and leisure.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="amenities.html">Amenities</a></li>
+              <li><a href="accommodation.html">Rooms</a></li>
+              <li><a href="dining.html">Dining</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Spa & Wellness</a></li>
+              <li><a href="#">Conference Rooms</a></li>
+              <li><a href="#">Wedding Planning</a></li>
+              <li><a href="#">Airport Transfer</a></li>
+              <li><a href="#">Tour Packages</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Subscribe for exclusive offers and updates</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Grand Mercure Surya Palace. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Booking Modal -->
@@ -589,7 +291,7 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Guest Details Form -->
           <form id="guestDetailsForm" class="guest-form">
             <h3><i class="fas fa-user"></i> Guest Information</h3>
@@ -648,7 +350,7 @@
             <span>Amount to Pay</span>
             <strong id="paymentTotal">₹0</strong>
           </div>
-          
+
           <!-- Payment Methods Tabs -->
           <div class="payment-methods">
             <div class="payment-tabs">
@@ -665,7 +367,7 @@
                 <i class="fas fa-wallet"></i> Pay Later
               </button>
             </div>
-            
+
             <!-- Card Payment Form -->
             <div class="payment-panel active" id="cardPanel">
               <form id="cardPaymentForm">
@@ -702,7 +404,7 @@
                 </div>
               </form>
             </div>
-            
+
             <!-- UPI Payment Form -->
             <div class="payment-panel" id="upiPanel">
               <form id="upiPaymentForm">
@@ -713,7 +415,7 @@
                 <p class="payment-hint"><i class="fas fa-info-circle"></i> You will receive a payment request on your UPI app</p>
               </form>
             </div>
-            
+
             <!-- Net Banking Form -->
             <div class="payment-panel" id="netbankingPanel">
               <form id="netbankingForm">
@@ -734,7 +436,7 @@
                 <p class="payment-hint"><i class="fas fa-info-circle"></i> You will be redirected to your bank's secure page</p>
               </form>
             </div>
-            
+
             <!-- Pay Later Options -->
             <div class="payment-panel" id="paylaterPanel">
               <div class="paylater-options">
@@ -771,7 +473,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="secure-badge">
             <i class="fas fa-lock"></i>
             <span>Secure 256-bit SSL Encrypted Payment</span>
